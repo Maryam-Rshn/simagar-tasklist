@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { defineStore } from 'pinia'
 
 const PAGE_SIZE = 10
@@ -94,9 +95,9 @@ export const useTasksStore = defineStore('tasks', () => {
     error.value = null
 
     try {
-      const { $api } = useNuxtApp()
+      const config = useRuntimeConfig()
       const targetPage = reset ? 1 : page.value
-      const response = await $api.get('/tasks', {
+      const response = await axios.get(`${config.public.apiBase}/tasks`, {
         params: buildQuery(targetPage),
       })
 
@@ -169,12 +170,12 @@ export const useTasksStore = defineStore('tasks', () => {
   }
 
   async function saveTask(payload) {
-    const { $api } = useNuxtApp()
+    const config = useRuntimeConfig()
     const now = new Date().toISOString()
 
     if (editingTask.value) {
-      const { data: updated } = await $api.patch(
-        `/tasks/${editingTask.value.id}`,
+      const { data: updated } = await axios.patch(
+        `${config.public.apiBase}/tasks/${editingTask.value.id}`,
         {
           ...payload,
           updatedAt: now,
@@ -186,7 +187,7 @@ export const useTasksStore = defineStore('tasks', () => {
         tasks.value[index] = updated
       }
     } else {
-      await $api.post('/tasks', {
+      await axios.post(`${config.public.apiBase}/tasks`, {
         ...payload,
         startDate: payload.endDate || now.slice(0, 10),
         createdBy: payload.members[0] ?? 1,
@@ -200,8 +201,8 @@ export const useTasksStore = defineStore('tasks', () => {
   }
 
   async function deleteTask(id) {
-    const { $api } = useNuxtApp()
-    await $api.delete(`/tasks/${id}`)
+    const config = useRuntimeConfig()
+    await axios.delete(`${config.public.apiBase}/tasks/${id}`)
     tasks.value = tasks.value.filter((task) => task.id !== id)
     total.value = Math.max(0, total.value - 1)
   }

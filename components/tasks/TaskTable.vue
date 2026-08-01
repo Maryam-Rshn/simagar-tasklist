@@ -218,7 +218,9 @@ function assignee(task) {
   return props.usersById[id]
 }
 
-onMounted(() => {
+function createObserver() {
+  observer?.disconnect()
+
   observer = new IntersectionObserver(
     (entries) => {
       if (
@@ -230,13 +232,26 @@ onMounted(() => {
         emit('load-more')
       }
     },
-    { rootMargin: '120px' },
+    {
+      rootMargin: '120px',
+    },
   )
 
   if (sentinel.value) {
     observer.observe(sentinel.value)
   }
+}
+
+onMounted(() => {
+  createObserver()
 })
+
+watch(
+  () => sentinel.value,
+  () => {
+    createObserver()
+  },
+)
 
 onBeforeUnmount(() => {
   observer?.disconnect()

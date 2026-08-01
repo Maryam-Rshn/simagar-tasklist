@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { defineStore } from 'pinia'
 
 export function userDisplayName(user) {
@@ -48,8 +49,8 @@ export const useUsersStore = defineStore('users', () => {
     error.value = null
 
     try {
-      const { $api } = useNuxtApp()
-      const { data } = await $api.get('/users')
+      const config = useRuntimeConfig()
+      const { data } = await axios.get(`${config.public.apiBase}/users`)
       users.value = data
       return users.value
     } catch (err) {
