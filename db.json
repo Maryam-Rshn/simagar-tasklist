@@ -1,0 +1,716 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "alice.johnson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-alice",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "email": "bob.smith@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-bob",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "email": "carol.davis@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-carol",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "email": "dave.wilson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-dave",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "email": "eve.martinez@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-eve",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "email": "frank.anderson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-frank",
+      "userId": 6
+    },
+    {
+      "id": 7,
+      "email": "grace.thomas@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-grace",
+      "userId": 7
+    },
+    {
+      "id": 8,
+      "email": "henry.taylor@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-henry",
+      "userId": 8
+    },
+    {
+      "id": 9,
+      "email": "irene.moore@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-irene",
+      "userId": 9
+    },
+    {
+      "id": 10,
+      "email": "jack.jackson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-jack",
+      "userId": 10
+    },
+    {
+      "id": 11,
+      "email": "karen.white@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-karen",
+      "userId": 11
+    },
+    {
+      "id": 12,
+      "email": "leo.harris@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-leo",
+      "userId": 12
+    },
+    {
+      "id": 13,
+      "email": "mia.martin@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-mia",
+      "userId": 13
+    },
+    {
+      "id": 14,
+      "email": "noah.thompson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-noah",
+      "userId": 14
+    },
+    {
+      "id": 15,
+      "email": "olivia.garcia@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-olivia",
+      "userId": 15
+    },
+    {
+      "id": 16,
+      "email": "peter.martinez@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-peter",
+      "userId": 16
+    },
+    {
+      "id": 17,
+      "email": "quinn.robinson@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-quinn",
+      "userId": 17
+    },
+    {
+      "id": 18,
+      "email": "rachel.clark@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-rachel",
+      "userId": 18
+    },
+    {
+      "id": 19,
+      "email": "sam.rodriguez@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-sam",
+      "userId": 19
+    },
+    {
+      "id": 20,
+      "email": "tina.lewis@example.com",
+      "password": "password123",
+      "token": "mock-jwt-token-tina",
+      "userId": 20
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Implement Login Page",
+      "description": "Create login page using Nuxt UI components with validation and error handling.",
+      "status": "todo",
+      "priority": "high",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-05",
+      "members": [
+        1,
+        4
+      ],
+      "createdBy": 1,
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-06-01T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Design Database Schema",
+      "description": "Finalize the PostgreSQL schema for users, tasks, and projects.",
+      "status": "done",
+      "priority": "critical",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-03",
+      "members": [
+        2,
+        5,
+        8
+      ],
+      "createdBy": 2,
+      "createdAt": "2026-06-01T10:00:00Z",
+      "updatedAt": "2026-06-03T16:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Setup API Routes",
+      "description": "Create RESTful endpoints for task management using Nitro.",
+      "status": "in-progress",
+      "priority": "high",
+      "startDate": "2026-06-02",
+      "endDate": "2026-06-08",
+      "members": [
+        3,
+        6
+      ],
+      "createdBy": 3,
+      "createdAt": "2026-06-02T08:30:00Z",
+      "updatedAt": "2026-06-04T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Write Unit Tests for Auth",
+      "description": "Cover login, registration, and token validation with Vitest.",
+      "status": "todo",
+      "priority": "medium",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-10",
+      "members": [
+        7,
+        9
+      ],
+      "createdBy": 4,
+      "createdAt": "2026-06-04T07:00:00Z",
+      "updatedAt": "2026-06-04T07:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Design Dashboard UI",
+      "description": "Create wireframes and mockups for the main dashboard.",
+      "status": "review",
+      "priority": "high",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-07",
+      "members": [
+        10,
+        12,
+        14
+      ],
+      "createdBy": 5,
+      "createdAt": "2026-06-01T14:00:00Z",
+      "updatedAt": "2026-06-06T09:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Implement Task Creation Form",
+      "description": "Build a form to create new tasks with all required fields.",
+      "status": "in-progress",
+      "priority": "high",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-09",
+      "members": [
+        1,
+        3,
+        5
+      ],
+      "createdBy": 1,
+      "createdAt": "2026-06-03T11:00:00Z",
+      "updatedAt": "2026-06-05T10:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Integrate JWT Authentication",
+      "description": "Connect frontend with backend JWT tokens for secure API calls.",
+      "status": "todo",
+      "priority": "critical",
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-12",
+      "members": [
+        2,
+        7
+      ],
+      "createdBy": 6,
+      "createdAt": "2026-06-06T08:00:00Z",
+      "updatedAt": "2026-06-06T08:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Create User Profile Page",
+      "description": "Display user information and allow editing of profile details.",
+      "status": "backlog",
+      "priority": "low",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-20",
+      "members": [
+        8,
+        11
+      ],
+      "createdBy": 7,
+      "createdAt": "2026-06-10T09:30:00Z",
+      "updatedAt": "2026-06-10T09:30:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Setup CI/CD Pipeline",
+      "description": "Configure GitHub Actions for automated testing and deployment.",
+      "status": "todo",
+      "priority": "medium",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-14",
+      "members": [
+        9,
+        13,
+        15
+      ],
+      "createdBy": 8,
+      "createdAt": "2026-06-07T06:00:00Z",
+      "updatedAt": "2026-06-07T06:00:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Write API Documentation",
+      "description": "Use Swagger/OpenAPI to document all endpoints.",
+      "status": "done",
+      "priority": "medium",
+      "startDate": "2026-06-02",
+      "endDate": "2026-06-06",
+      "members": [
+        6,
+        10
+      ],
+      "createdBy": 9,
+      "createdAt": "2026-06-02T13:00:00Z",
+      "updatedAt": "2026-06-06T17:00:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Implement Drag-and-Drop for Tasks",
+      "description": "Allow reordering tasks in the board view using Vue Draggable.",
+      "status": "in-progress",
+      "priority": "high",
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-11",
+      "members": [
+        12,
+        16
+      ],
+      "createdBy": 10,
+      "createdAt": "2026-06-05T10:00:00Z",
+      "updatedAt": "2026-06-06T14:00:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Add Search and Filter Functionality",
+      "description": "Enable searching tasks by title and filtering by status/priority.",
+      "status": "todo",
+      "priority": "medium",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-15",
+      "members": [
+        14,
+        17,
+        18
+      ],
+      "createdBy": 11,
+      "createdAt": "2026-06-08T07:30:00Z",
+      "updatedAt": "2026-06-08T07:30:00Z"
+    },
+    {
+      "id": 13,
+      "title": "Implement Notifications",
+      "description": "Show toast notifications for task assignment and status changes.",
+      "status": "backlog",
+      "priority": "low",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-22",
+      "members": [
+        1,
+        19
+      ],
+      "createdBy": 12,
+      "createdAt": "2026-06-12T08:00:00Z",
+      "updatedAt": "2026-06-12T08:00:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Create Admin Panel",
+      "description": "Build an interface for admins to manage users and system settings.",
+      "status": "todo",
+      "priority": "high",
+      "startDate": "2026-06-09",
+      "endDate": "2026-06-18",
+      "members": [
+        2,
+        4,
+        6
+      ],
+      "createdBy": 13,
+      "createdAt": "2026-06-09T11:00:00Z",
+      "updatedAt": "2026-06-09T11:00:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Implement Dark Mode",
+      "description": "Add dark theme support using Nuxt UI color modes.",
+      "status": "done",
+      "priority": "low",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-02",
+      "members": [
+        3,
+        8
+      ],
+      "createdBy": 14,
+      "createdAt": "2026-06-01T16:00:00Z",
+      "updatedAt": "2026-06-02T18:00:00Z"
+    },
+    {
+      "id": 16,
+      "title": "Optimize Database Queries",
+      "description": "Add indexes and refactor queries for performance.",
+      "status": "in-progress",
+      "priority": "critical",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-10",
+      "members": [
+        5,
+        9,
+        20
+      ],
+      "createdBy": 15,
+      "createdAt": "2026-06-04T09:00:00Z",
+      "updatedAt": "2026-06-06T15:00:00Z"
+    },
+    {
+      "id": 17,
+      "title": "Set Up Logging and Monitoring",
+      "description": "Implement centralized logging with Winston and performance monitoring.",
+      "status": "todo",
+      "priority": "medium",
+      "startDate": "2026-06-11",
+      "endDate": "2026-06-18",
+      "members": [
+        7,
+        11,
+        13
+      ],
+      "createdBy": 16,
+      "createdAt": "2026-06-11T07:00:00Z",
+      "updatedAt": "2026-06-11T07:00:00Z"
+    },
+    {
+      "id": 18,
+      "title": "Design Landing Page",
+      "description": "Create marketing landing page for the application.",
+      "status": "review",
+      "priority": "high",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-09",
+      "members": [
+        10,
+        12,
+        15
+      ],
+      "createdBy": 17,
+      "createdAt": "2026-06-03T12:00:00Z",
+      "updatedAt": "2026-06-07T10:00:00Z"
+    },
+    {
+      "id": 19,
+      "title": "Implement Task Comments",
+      "description": "Allow users to add comments on tasks with timestamps.",
+      "status": "backlog",
+      "priority": "low",
+      "startDate": "2026-06-14",
+      "endDate": "2026-06-25",
+      "members": [
+        16,
+        18
+      ],
+      "createdBy": 18,
+      "createdAt": "2026-06-14T08:30:00Z",
+      "updatedAt": "2026-06-14T08:30:00Z"
+    },
+    {
+      "id": 20,
+      "title": "Add File Attachments",
+      "description": "Enable uploading and attaching files to tasks.",
+      "status": "todo",
+      "priority": "medium",
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-17",
+      "members": [
+        1,
+        2,
+        3
+      ],
+      "createdBy": 19,
+      "createdAt": "2026-06-10T09:00:00Z",
+      "updatedAt": "2026-06-10T09:00:00Z"
+    },
+    {
+      "id": 21,
+      "title": "Implement Task Archiving",
+      "description": "Allow users to archive completed tasks instead of deleting.",
+      "status": "done",
+      "priority": "medium",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-04",
+      "members": [
+        4,
+        7,
+        14
+      ],
+      "createdBy": 20,
+      "createdAt": "2026-06-01T13:00:00Z",
+      "updatedAt": "2026-06-04T11:00:00Z"
+    },
+    {
+      "id": 22,
+      "title": "Create User Onboarding Flow",
+      "description": "Design a step-by-step guide for new users.",
+      "status": "in-progress",
+      "priority": "high",
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-13",
+      "members": [
+        5,
+        8,
+        19
+      ],
+      "createdBy": 1,
+      "createdAt": "2026-06-06T10:00:00Z",
+      "updatedAt": "2026-06-07T12:00:00Z"
+    },
+    {
+      "id": 23,
+      "title": "Integrate with Third-Party APIs",
+      "description": "Connect to external services like Slack or GitHub.",
+      "status": "todo",
+      "priority": "low",
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-30",
+      "members": [
+        6,
+        11,
+        17
+      ],
+      "createdBy": 2,
+      "createdAt": "2026-06-15T07:00:00Z",
+      "updatedAt": "2026-06-15T07:00:00Z"
+    },
+    {
+      "id": 24,
+      "title": "Build Reporting Dashboard",
+      "description": "Generate charts and statistics on task completion rates.",
+      "status": "backlog",
+      "priority": "medium",
+      "startDate": "2026-06-18",
+      "endDate": "2026-06-28",
+      "members": [
+        9,
+        12,
+        20
+      ],
+      "createdBy": 3,
+      "createdAt": "2026-06-18T09:30:00Z",
+      "updatedAt": "2026-06-18T09:30:00Z"
+    },
+    {
+      "id": 25,
+      "title": "Implement Password Reset Flow",
+      "description": "Allow users to reset their password via email link.",
+      "status": "done",
+      "priority": "critical",
+      "startDate": "2026-06-02",
+      "endDate": "2026-06-05",
+      "members": [
+        2,
+        6,
+        10
+      ],
+      "createdBy": 4,
+      "createdAt": "2026-06-02T14:00:00Z",
+      "updatedAt": "2026-06-05T16:00:00Z"
+    },
+    {
+      "id": 26,
+      "title": "Add Keyboard Shortcuts",
+      "description": "Implement shortcuts for common actions like create task, save, etc.",
+      "status": "todo",
+      "priority": "low",
+      "startDate": "2026-06-16",
+      "endDate": "2026-06-23",
+      "members": [
+        13,
+        15
+      ],
+      "createdBy": 5,
+      "createdAt": "2026-06-16T08:00:00Z",
+      "updatedAt": "2026-06-16T08:00:00Z"
+    },
+    {
+      "id": 27,
+      "title": "Set Up Multi-language Support",
+      "description": "Prepare i18n files for English and Spanish.",
+      "status": "in-progress",
+      "priority": "medium",
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-15",
+      "members": [
+        14,
+        16,
+        18
+      ],
+      "createdBy": 6,
+      "createdAt": "2026-06-08T10:00:00Z",
+      "updatedAt": "2026-06-09T14:00:00Z"
+    },
+    {
+      "id": 28,
+      "title": "Implement Bulk Task Actions",
+      "description": "Allow selecting multiple tasks and changing status or deleting.",
+      "status": "review",
+      "priority": "high",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-11",
+      "members": [
+        1,
+        7,
+        19
+      ],
+      "createdBy": 7,
+      "createdAt": "2026-06-04T11:00:00Z",
+      "updatedAt": "2026-06-10T15:00:00Z"
+    },
+    {
+      "id": 29,
+      "title": "Create Error Boundary Component",
+      "description": "Catch and display errors in the UI gracefully.",
+      "status": "done",
+      "priority": "medium",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-02",
+      "members": [
+        3,
+        8
+      ],
+      "createdBy": 8,
+      "createdAt": "2026-06-01T15:00:00Z",
+      "updatedAt": "2026-06-02T17:00:00Z"
+    },
+    {
+      "id": 30,
+      "title": "Add Recurring Tasks Feature",
+      "description": "Allow tasks to repeat daily, weekly, or monthly.",
+      "status": "backlog",
+      "priority": "low",
+      "startDate": "2026-06-20",
+      "endDate": "2026-07-05",
+      "members": [
+        4,
+        9,
+        12
+      ],
+      "createdBy": 9,
+      "createdAt": "2026-06-20T06:00:00Z",
+      "updatedAt": "2026-06-20T06:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "title": "Task Updated",
+      "message": "Dashboard task 'Design Dashboard UI' has been completed.",
+      "read": false,
+      "createdAt": "2026-06-06T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "New Task Assigned",
+      "message": "You have been assigned to task 'Implement Login Page'.",
+      "read": false,
+      "createdAt": "2026-06-01T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Task Overdue",
+      "message": "Task 'Setup API Routes' is overdue by 1 day.",
+      "read": true,
+      "createdAt": "2026-06-09T08:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Comment Added",
+      "message": "Alice added a comment on task 'Design Database Schema'.",
+      "read": false,
+      "createdAt": "2026-06-03T14:20:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Task Created",
+      "message": "A new task 'Implement Dark Mode' has been created by Noah.",
+      "read": true,
+      "createdAt": "2026-06-01T16:05:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Priority Changed",
+      "message": "Priority of task 'Implement Task Creation Form' changed to critical.",
+      "read": false,
+      "createdAt": "2026-06-05T11:45:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Task Archived",
+      "message": "Task 'Implement Task Archiving' has been archived.",
+      "read": true,
+      "createdAt": "2026-06-04T11:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Reminder",
+      "message": "Reminder: Task 'Write Unit Tests for Auth' is due tomorrow.",
+      "read": false,
+      "createdAt": "2026-06-09T07:30:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Status Changed",
+      "message": "Task 'Integrate JWT Authentication' moved to in-progress.",
+      "read": false,
+      "createdAt": "2026-06-06T08:20:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Team Member Added",
+      "message": "Alice Johnson has been added to task 'Design Dashboard UI'.",
+      "read": true,
+      "createdAt": "2026-06-01T14:10:00Z"
+    }
+  ]
+}

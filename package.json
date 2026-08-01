@@ -1,0 +1,29 @@
+{
+  "name": "simagar-tasklist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "api": "json-server db.json --port 3001"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
+    "axios": "^1.12.2",
+    "json-server": "^1.0.0-beta.3",
+    "nuxt": "^3.21.10",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^3.3.1",
+    "@nuxtjs/tailwindcss": "^6.14.0"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  }
+}
