@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --brand-yellow: #f5c518;
+  --brand-yellow: #ffdd07;
   --sidebar: #111827;
-  --sidebar-active: #f5c518;
+  --sidebar-active: #ffdd07;
 }
 
 @layer base {

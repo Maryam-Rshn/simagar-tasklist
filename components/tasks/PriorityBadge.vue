@@ -13,9 +13,10 @@
       <path
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="M5 4h9l5 6-5 6H5V4z"
+        d="M5 21V4m0 0c4-3 8 3 14 0v9c-6 3-10-3-14 0"
       />
     </svg>
+
     {{ label }}
   </span>
 </template>
@@ -23,27 +24,27 @@
 <script setup>
 const props = defineProps({
   priority: { type: String, required: true },
-})
+});
 
 const labels = {
-  critical: 'Critical',
-  high: 'High',
-  medium: 'Medium',
-  low: 'Low',
-}
+  critical: "Critical",
+  high: "High",
+  medium: "Medium",
+  low: "Low",
+};
 
-const label = computed(() => labels[props.priority] || props.priority)
+const label = computed(() => labels[props.priority] || props.priority);
 
 const classes = computed(() => {
   switch (props.priority) {
-    case 'critical':
-      return 'bg-red-100 text-red-800'
-    case 'high':
-      return 'bg-red-50 text-red-700'
-    case 'medium':
-      return 'bg-amber-50 text-amber-700'
+    case "critical":
+      return "bg-red-100 text-red-800";
+    case "high":
+      return "bg-red-50 text-red-700";
+    case "medium":
+      return "bg-amber-50 text-amber-700";
     default:
-      return 'bg-emerald-50 text-emerald-700'
+      return "bg-emerald-50 text-emerald-700";
   }
-})
+});
 </script>
